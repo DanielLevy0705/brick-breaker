@@ -1,0 +1,11 @@
+# default values for blocks
+default height:25 width:50 hit_points:1
+
+# block definitions
+bdef symbol:b stroke:color(black) fill:color(RGB(0,0,255))
+bdef symbol:l stroke:color(black) fill:color(RGB(51,153,255))
+bdef symbol:w stroke:color(black) fill:color(RGB(153,204,255))
+bdef symbol:f height:100 width:100 hit_points:3 fill-3:image(block_images/anna_and_elsa_3.jpg) fill-2:image(block_images/anna_and_elsa_2.jpg) fill-1:image(block_images/anna_and_elsa_1.jpg)
+
+# spacers definitions
+sdef symbol:- width:50

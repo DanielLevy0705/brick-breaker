@@ -1,0 +1,11 @@
+# default values for blocks
+default height:100 width:100 hit_points:1
+# block definitions
+bdef symbol:o fill:image(block_images/portugal.png)
+bdef symbol:b fill:image(block_images/belgium.png)
+bdef symbol:l fill:image(block_images/brazil.png)
+bdef symbol:a fill:image(block_images/argentina.png)
+bdef symbol:f fill:image(block_images/france.jpg)
+bdef symbol:e fill:image(block_images/england.png)
+# spacers definitions
+sdef symbol:- width:75

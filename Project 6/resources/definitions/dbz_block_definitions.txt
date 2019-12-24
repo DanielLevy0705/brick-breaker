@@ -1,0 +1,5 @@
+# block definitions
+bdef symbol:g height:150 width:150 hit_points:7 fill-7:image(block_images/goku.jpg) fill-6:image(block_images/goku.jpg) fill-5:image(block_images/goku.jpg) fill-4:image(block_images/goku.jpg) fill-3:image(block_images/goku_hurt.jpg) fill-2:image(block_images/goku_hurt.jpg) fill-1:image(block_images/goku_about_to_lose.jpg)
+
+# spacers definitions
+sdef symbol:- width:50

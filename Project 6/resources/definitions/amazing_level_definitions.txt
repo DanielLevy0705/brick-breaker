@@ -1,0 +1,71 @@
+
+# Level 1
+# A level dedicated to goku being invincible
+
+START_LEVEL
+level_name: Invincible Block
+ball_velocities:-30,500 15,500
+background:image(background_images/dbz.jpg)
+paddle_speed:650
+paddle_width:160
+block_definitions:definitions/dbz_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:25
+num_blocks:2
+START_BLOCKS
+-
+-
+-
+-
+----gg----
+
+
+END_BLOCKS
+END_LEVEL
+
+
+# Level 2
+# A level for the mondial with teams blocks
+
+START_LEVEL
+level_name:Mondial
+ball_velocities:0,500
+background:image(background_images/ronaldo.jpg)
+paddle_speed:650
+paddle_width:160
+block_definitions:definitions/soccer_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:100
+num_blocks:18
+START_BLOCKS
+-oblafe-
+-efalbo-
+-abeofl-
+END_BLOCKS
+END_LEVEL
+
+# level 3
+# A level full of ice blocks with frozen picture
+
+START_LEVEL
+level_name:Frozen
+ball_velocities:0,500 45,500 -45,500
+background:image(background_images/frozen.jpg)
+paddle_speed:650
+paddle_width:160
+block_definitions:definitions/frozen_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:25
+num_blocks:83
+START_BLOCKS
+bbbbbbbbbbbbbbb
+llllllflllllll
+wwwwww--wwwwwww
+wwwwww--wwwwwww
+llllll--lllllll
+bbbbbbbbbbbbbbb
+END_BLOCKS
+END_LEVEL
