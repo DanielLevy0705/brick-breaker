@@ -66,7 +66,7 @@ public class Block implements Collidable, Sprite, HitNotifier {
 
     /**
      * getter to block background.
-     *
+     * might be useful for cases like setting a new background based on existing.
      * @return the block background
      */
     public BlockBackground getBlockBackground() {
@@ -133,7 +133,7 @@ public class Block implements Collidable, Sprite, HitNotifier {
      * @param dt seconds number per frame.
      */
     public void timePassed(double dt) {
-        //nothing for now
+        //nothing for the regular block, could be color changing block or other extensions.
     }
 
     /**
