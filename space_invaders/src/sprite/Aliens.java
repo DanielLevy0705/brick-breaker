@@ -2,7 +2,6 @@ package sprite;
 
 import biuoop.DrawSurface;
 import listener.HitListener;
-import listener.HitNotifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.List;
 /**
  * a class that represent the formation of the aliens.
  */
-public class Aliens implements HitNotifier, Sprite {
+public class Aliens implements Sprite {
     private List<Alien> aliensList;
     private List<HitListener> hitListeners = new ArrayList<HitListener>();
     private boolean moveLeft, moveRight, newLevel;
@@ -36,26 +35,6 @@ public class Aliens implements HitNotifier, Sprite {
      */
     public void remove(WallBlock alien) {
         this.aliensList.remove(alien);
-    }
-
-    /**
-     * Add hl as a listener to hit events.
-     *
-     * @param hl the hit listener
-     */
-    @Override
-    public void addHitListener(HitListener hl) {
-        this.hitListeners.add(hl);
-    }
-
-    /**
-     * Remove hl from the list of listeners to hit events.
-     *
-     * @param hl the hit listener
-     */
-    @Override
-    public void removeHitListener(HitListener hl) {
-        this.hitListeners.remove(hl);
     }
 
     /**

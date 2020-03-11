@@ -4,7 +4,7 @@ import biuoop.DrawSurface;
 import biuoop.Sleeper;
 import sprite.SpriteCollection;
 
-import java.awt.Color;
+import java.awt.*;
 
 /**
  * an animation type class that is counting down from 3 to 1.
@@ -15,6 +15,7 @@ public class CountDownAnimation implements Animation {
     private SpriteCollection screenOfGame;
     private Boolean stop;
     private int milliseconds;
+    private Sleeper sleeper;
 
     /**
      * constructor.
@@ -27,6 +28,7 @@ public class CountDownAnimation implements Animation {
         this.screenOfGame = gameScreen;
         this.countFromThis = countFrom;
         this.secondsNum = numOfSeconds;
+        this.sleeper = new Sleeper();
         //initialize this.stop to false
         this.stop = false;
         /* initialize the milliseconds to the amount of milliseconds should be running,
@@ -59,10 +61,7 @@ public class CountDownAnimation implements Animation {
             this.stop = true;
         }
         //create new sleeper and tell him how much to sleep.
-        if (!this.stop) {
-            Sleeper sleeper = new Sleeper();
-            sleeper.sleepFor(this.milliseconds);
-        }
+        sleeper.sleepFor(this.milliseconds);
         //reduce the number of seconds to count from.
         this.countFromThis--;
     }

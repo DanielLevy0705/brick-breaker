@@ -20,8 +20,6 @@ import java.util.TreeMap;
 
 /**
  * this class creates a new block.
- *
- * @author Daniel Levy
  */
 public class WallBlock implements Collidable, Sprite, HitNotifier {
     private Rectangle blockShape;

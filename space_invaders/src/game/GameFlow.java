@@ -118,7 +118,6 @@ public class GameFlow {
         }
         this.animationRunner.run(new KeyPressStoppableAnimation(this.keyboardSensor,
                 "space", new HighScoresAnimation(this.table)));
-        return;
     }
 
     /**

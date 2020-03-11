@@ -12,8 +12,6 @@ import java.awt.Color;
 
 /**
  * a class that creates a circle with velocity and color and draw it on the screen.
- *
- * @author Daniel Levy
  */
 public class Ball implements Sprite {
     // variables that indicates the radius,center,color,velocity of the ball and edges of the screen

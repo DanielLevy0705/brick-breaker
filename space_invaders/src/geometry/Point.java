@@ -2,8 +2,6 @@ package geometry;
 
 /**
  * this class is to create a point in space.
- *
- * @author Daniel Levy
  */
 public class Point {
     //double variables of point
