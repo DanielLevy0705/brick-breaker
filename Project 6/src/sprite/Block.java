@@ -20,8 +20,6 @@ import java.util.TreeMap;
 
 /**
  * this class creates a new block.
- *
- * @author Daniel Levy
  */
 public class Block implements Collidable, Sprite, HitNotifier {
     private Rectangle blockShape;
@@ -66,7 +64,7 @@ public class Block implements Collidable, Sprite, HitNotifier {
 
     /**
      * getter to block background.
-     * might be useful for cases like setting a new background based on existing.
+     * might be useful for cases like setting
      * @return the block background
      */
     public BlockBackground getBlockBackground() {

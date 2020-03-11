@@ -27,8 +27,6 @@ import java.util.Map;
 
 /**
  * this class includes a main function to initialize and run the game.
- *
- * @author Daniel Levy
  */
 public class Ass6Game {
     /**

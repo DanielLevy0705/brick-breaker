@@ -15,6 +15,7 @@ public class CountDownAnimation implements Animation {
     private SpriteCollection screenOfGame;
     private Boolean stop;
     private int milliseconds;
+    private Sleeper sleeper;
 
     /**
      * constructor.
@@ -27,6 +28,7 @@ public class CountDownAnimation implements Animation {
         this.screenOfGame = gameScreen;
         this.countFromThis = countFrom;
         this.secondsNum = numOfSeconds;
+        this.sleeper = new Sleeper();
         //initialize this.stop to false
         this.stop = false;
         /* initialize the milliseconds to the amount of milliseconds should be running,
@@ -59,7 +61,6 @@ public class CountDownAnimation implements Animation {
             this.stop = true;
         }
         //create new sleeper and tell him how much to sleep.
-        Sleeper sleeper = new Sleeper();
         sleeper.sleepFor(this.milliseconds);
         //reduce the number of seconds to count from.
         this.countFromThis--;

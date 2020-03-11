@@ -21,7 +21,7 @@ public class EndScreen implements Animation {
      * @param score     the final score of the game.
      */
     public EndScreen(Boolean winOrLose, Counter score) {
-        //initialize this.stop as false
+        //initialize fields.
         this.didIWin = winOrLose;
         this.endScore = score;
     }
@@ -40,24 +40,20 @@ public class EndScreen implements Animation {
         Image img;
         String winner = "background_images/you_win.jpg";
         String loser = "background_images/game_over.jpg";
+        String correctPath;
         if (this.didIWin) {
-            try {
-                img = ImageIO.read(ClassLoader.getSystemClassLoader().getResourceAsStream(winner));
-                d.drawImage(0, 0, img);
-            } catch (IOException e) {
-                System.err.println("Failed reading image file.");
-            }
-            d.drawText(270, d.getHeight() - 100, "Your score is " + strScore, 32);
+            correctPath = winner;
             //else the user lost so draw a "game over' message and stop the animation when the space key is pressed.
         } else {
-            try {
-                img = ImageIO.read(ClassLoader.getSystemClassLoader().getResourceAsStream(loser));
-                d.drawImage(0, 0, img);
-            } catch (IOException e) {
-                System.err.println("Failed reading image file.");
-            }
-            d.drawText(270, d.getHeight() - 100, "Your score is " + strScore, 32);
+            correctPath = loser;
         }
+        try {
+            img = ImageIO.read(ClassLoader.getSystemClassLoader().getResourceAsStream(correctPath));
+            d.drawImage(0, 0, img);
+        } catch (IOException e) {
+            System.err.println("Failed reading image file.");
+        }
+        d.drawText(270, d.getHeight() - 100, "Your score is " + strScore, 32);
     }
 
     /**

@@ -73,9 +73,10 @@ public class GameFlow {
                 Animation end = new EndScreen(false, this.score);
                 this.animationRunner.run(new KeyPressStoppableAnimation(this.keyboardSensor, "space", end));
                 lost = true;
+                break;
             }
-
         }
+
         if (!lost) {
             //if the game is over and there's lives left run EndScreen animation give true value to WinOrLose.
             this.animationRunner.run(new KeyPressStoppableAnimation(this.keyboardSensor, "space"
@@ -92,16 +93,6 @@ public class GameFlow {
         }
         this.animationRunner.run(new KeyPressStoppableAnimation(this.keyboardSensor,
                 "space", new HighScoresAnimation(this.table)));
-        return;
-    }
-
-    /**
-     * getter to the file that the game flow holds.
-     *
-     * @return the game flow file.
-     */
-    public File getFile() {
-        return file;
     }
 
 }

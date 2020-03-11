@@ -196,7 +196,6 @@ public class Rectangle {
      * @return the boolean answer
      */
     public boolean insideOf(Point p) {
-        double e = 0.0001;
         //check if it contains the x and y values that are withing the rect.
         if ((this.bottomSide.contains(p, "x")) && (this.leftSide.contains(p, "y"))) {
             return true;

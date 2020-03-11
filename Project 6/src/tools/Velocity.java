@@ -4,8 +4,6 @@ import geometry.Point;
 
 /**
  * tools.Velocity specifies the change in position on the `x` and the `y` axes.
- *
- * @author Daniel Levy
  */
 public class Velocity {
     private double dx;

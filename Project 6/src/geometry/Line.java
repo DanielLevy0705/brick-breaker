@@ -2,8 +2,6 @@ package geometry;
 
 /**
  * this class is creating a line in space.
- *
- * @author Daniel Levy
  */
 public class Line {
     //point objects to create a line
